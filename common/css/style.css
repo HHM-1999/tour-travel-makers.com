@@ -73,14 +73,23 @@ form .btn:hover{
 
 
 /* hero-img */
-.carousel-item  img{
-    height: 550px;
+.carousel-caption {
+    position: absolute;
+    right: 30%;
+    bottom: 14.25rem;
+    left: 30%;
+    padding-top: 0.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+     overflow: hidden;
 }
+
 .form h1{
   font-size: 45px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 input{
     background-color: transparent;
@@ -137,9 +146,57 @@ input{
     font-size: 15px;
     line-height: 1;
 }
+.card{
+    border-radius: 0;
+}
 .offer-card{
     margin-top: 30px;
 }
-
-
+.card-body .card-title{
+    font-size: 16px;
+    font-weight: 700;
+}
+.card-body .card-text{
+    font-size: 14px;
+}
+/* travel agents */
+.travel-agent{
+    margin-top: 80px;
+}
+.travel-agent-header{
+    border-left:5px solid #009579;
+    padding: 0px 10px;
+}
+.travel-agent-header h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+.travel-agent-header p{
+    font-size: 15px;
+    line-height: 1;
+}
+.travel-agent-area{
+    margin-top: 30px;
+}
+/* discover bd */
+.discover-bd{
+    margin-top: 80px;
+}
+.discover-bd-header{
+    border-left:5px solid #009579;
+    padding: 0px 10px;
+}
+.discover-bd-header h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+.discover-bd-header p{
+    font-size: 15px;
+    line-height: 1;
+}
+.discover-bd-area{
+    margin-top: 30px;
+}
 

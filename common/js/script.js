@@ -2,6 +2,7 @@
 $('.responsive').slick({
     dots: true,
     infinite: false,
+    centerPadding: '10px',
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
