@@ -199,4 +199,44 @@ input{
 .discover-bd-area{
     margin-top: 30px;
 }
+.dis-bd-1{
+    margin-top: 20px;
+}
+.dis-bd-2{
+    margin-top: 20px;
+}
+.card-img-overlay h3{
+    font-weight: 700;
+    color: #fff;
+
+}
+.card-img-overlay h3 i {
+	font-size: 24px;
+	color: #ccc;
+	padding: 0px 5px;
+}
+.card{
+    border: none;
+    border-radius: 0;
+}
+/* travel package */
+.travel-package{
+    margin-top: 80px;
+}
+.package-header{
+    border-left:5px solid #009579;
+    padding: 0px 10px;
+}
+.package-header h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+.package-header p{
+    font-size: 15px;
+    line-height: 1;
+}
+.package-area{
+    margin-top: 30px;
+}
 
