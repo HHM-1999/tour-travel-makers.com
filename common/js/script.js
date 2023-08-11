@@ -36,6 +36,19 @@ $('.responsive').slick({
     ]
 });
 
+///sticky///
+const stickyNav = document.getElementById("sticky-navbar");
+function toggleStickyNavbar() {
+    if (window.scrollY > stickyNav.offsetTop) {
+        stickyNav.classList.add('sticky');
+
+    }
+    else {
+        stickyNav.classList.remove("sticky");
+    }
+}
+window.addEventListener('scroll', toggleStickyNavbar);
+
 //chatbot///
 document.getElementById('whats-chat').addEventListener("mouseover", showchatbox);
 document.getElementById('chat-top-right').addEventListener("click", closechatbox);
