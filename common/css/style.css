@@ -21,7 +21,6 @@ body {
   margin: 10px 5px;
 }
 .social-links {
-  margin-left: 45%;
   font-size: 14px;
 }
 .social-links .round-btn a {
@@ -36,8 +35,8 @@ body {
   border-radius: 50px;
   width: 30px;
   height: 30px;
-  padding: 4px 10px;
-  margin: 5px 6px;
+  padding: 5px 10px;
+  margin: 5px 5px;
   list-style: none;
 }
 form .btn {
@@ -115,15 +114,15 @@ form .btn:hover {
 }
 .chat-in {
   width: 80%;
-  color: #000;
 }
 #chat-form input {
-  border-radius: 5px 0 5px 5px;
+  /* border-radius: 4px 0 5px -8px; */
   border: none;
   outline: none;
   font-size: 14px;
-  padding: 5px;
+  padding: 6px;
   line-height: 2;
+  width: 130%;
 }
 #send-btn {
   width: 20%;
@@ -171,10 +170,20 @@ form .btn:hover {
   font-size: 12px;
 }
 .navbar-collapse form {
-  padding-left: 23px;
+  padding-left: 200px;
+  margin: 5px;
 }
 .navbar-nav {
   margin-left: 50px;
+}
+.navbar button {
+  padding: 0 18px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 0 92px;
 }
 /* hero-img */
 .carousel-caption {
@@ -195,7 +204,7 @@ form .btn:hover {
   text-align: center;
   margin-bottom: 4rem;
 }
-input {
+.carousel-item input {
   background-color: transparent;
   color: #fff;
 }
