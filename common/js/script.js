@@ -2,10 +2,47 @@
 $('.responsive').slick({
     dots: true,
     infinite: false,
-    centerPadding: '10px',
+    centerPadding: '0px',
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+//travel agent
+$('.center').slick({
+    dots: true,
+    infinite: false,
+    centerPadding: '0px',
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     responsive: [
         {
             breakpoint: 1024,
@@ -49,29 +86,23 @@ function toggleStickyNavbar() {
 }
 window.addEventListener('scroll', toggleStickyNavbar);
 
-//chatbot///
-document.getElementById('whats-chat').addEventListener("mouseover", showchatbox);
-document.getElementById('chat-top-right').addEventListener("click", closechatbox);
-document.getElementById('send-btn').addEventListener("click", sendmsg);
-window.addEventListener("load", showchatboxtime);
-function showchatbox() {
-    document.getElementById('chat-box').style.right = '8%'
-}
-function closechatbox() {
-    document.getElementById('chat-box').style.right = '-500px'
 
+//search box//
+function showSearchBox() {
+    var searchcontainer = document.getElementById("searchcontainer");
+    searchcontainer.classList.remove("hidden");
+    console.log("hello")
+}
+function hideSearchBox() {
+    var searchcontainer = document.getElementById("searchcontainer");
+    searchcontainer.classList.add("hidden");
+    console.log("close")
+}
 
-}
-function showchatboxtime() {
-    setTimeout(launchbox, 5000)
-}
-function launchbox() {
-    document.getElementById('chat-box').style.right = '8%'
-
-}
-function sendmsg() {
-    var msg = document.getElementById('whats-in').value;
-    var relmsg = msg.replace(/ /g, "%20");
-    window.open('https://api.whatsapp.com/send?phone=99999999999&text=' + relmsg, '_blank');
+function performSearch() {
+    var searchInput = document.getElementById("searchInput").value;
+    // Perform your search operation using the search input value
+    // Add your search logic here (e.g., making an API request, filtering data)
+    console.log("Performing search: " + searchInput);
 
 }
