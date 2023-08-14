@@ -4,21 +4,33 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 /* top header */
 .top-header {
   background-color: black;
   color: #fff;
+  padding: 5px 0;
 }
 .top-header h3 {
   font-size: 12px;
   font-weight: 400;
   padding: 5px 0;
-  margin: 10px 0;
+  margin-bottom: 0;
 }
 .top-header .support i {
   font-size: 14px;
-  padding: 5px 0;
-  margin: 10px 5px;
+  padding: 5px 0px;
+  margin-right: 10px;
 }
 .social-links {
   font-size: 14px;
@@ -26,11 +38,19 @@ body {
 .social-links .round-btn a {
   background-color: transparent;
   color: #ccc;
-  font-size: 12px;
+  margin-left: 12px;
   text-decoration: none;
 }
+.round-btn a i {
+  font-size: 14px;
+  border: 1px solid #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+}
 .social-links .round-btn {
-  margin: 12px 20px;
   list-style: none;
 }
 .social-links .fa-facebook-f:hover {
@@ -137,9 +157,11 @@ form .btn:hover {
 }
 
 .logo i {
-  font-size: 30px;
+  font-size: 25px;
   color: #009579;
-  margin: 2px 6px 0 -10px;
+  padding: 10px 0;
+  margin-bottom: 0;
+  margin-left: -10px;
 }
 .logo a {
   color: #000;
@@ -147,6 +169,12 @@ form .btn:hover {
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   font-size: 14px;
+  padding: 12px 20px;
+}
+.navbar-brand h2 {
+  font-size: 27px;
+  padding: 5px 5px;
+  margin-bottom: 0;
 }
 .sticky {
   position: fixed;
@@ -157,12 +185,16 @@ form .btn:hover {
   box-shadow: 0 0 2px 0 #00000051;
   background-color: #fff;
 }
+.navbar-nav .nav-item .nav-link i:last-child {
+  margin: 0px;
+}
 /* hero-img */
 .login form {
   margin-bottom: 2rem;
 }
 .carousel-item img {
   height: 550px;
+  object-fit: cover;
 }
 .carousel-caption {
   right: 34%;
@@ -217,41 +249,37 @@ form .btn:hover {
   background: #006653;
 }
 /* offers */
-.offers {
-  padding-top: 80px;
+.section-heading {
+  padding: 80px 0 40px 0;
 }
 .offer-title-header {
   border-left: 5px solid #009579;
   padding: 0px 10px;
 }
 .offer-title-header h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   color: #000;
 }
 .offer-title-header p {
   font-size: 15px;
   line-height: 1;
+  margin-bottom: 40px;
 }
 .offer-card .card {
   border-radius: 0;
   border: 1px solid #ccc;
-}
-.offer-card {
-  padding-top: 30px;
+  padding: 10px;
 }
 .card-body .card-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
 }
 .card-body .card-text {
   font-size: 14px;
 }
 /* travel agents */
-.travel-agent {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+
 .travel-agent-header {
   border-left: 5px solid #009579;
   padding: 0px 10px;
@@ -264,15 +292,11 @@ form .btn:hover {
 .travel-agent-header p {
   font-size: 15px;
   line-height: 1;
+  margin-bottom: 40px;
 }
-.travel-agent-area {
-  padding-top: 40px;
-}
+
 /* discover bd */
-.discover-bd {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+
 .discover-bd-header {
   border-left: 5px solid #009579;
   padding: 0px 10px;
@@ -285,16 +309,12 @@ form .btn:hover {
 .discover-bd-header p {
   font-size: 15px;
   line-height: 1;
+  margin-bottom: 40px;
 }
-.discover-bd-area {
-  padding-top: 40px;
+.discover-bd-area .card {
+  padding-bottom: 24px;
 }
-.dis-bd-1 {
-  margin-top: 20px;
-}
-.dis-bd-2 {
-  margin-top: 20px;
-}
+
 .card-img-overlay h3 {
   font-weight: 700;
   color: #fff;
@@ -310,10 +330,7 @@ form .btn:hover {
 }
 
 /* travel package */
-.travel-package {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+
 .package-header {
   border-left: 5px solid #009579;
   padding: 0px 10px;
@@ -326,10 +343,9 @@ form .btn:hover {
 .package-header p {
   font-size: 15px;
   line-height: 1;
+  margin-bottom: 40px;
 }
-.package-area {
-  padding-top: 40px;
-}
+
 .card-body .btn {
   background-color: #006653;
   color: #fff;
@@ -347,22 +363,21 @@ form .btn:hover {
 }
 .package-area .card-body h5 {
   font-size: 18px;
+  margin-bottom: 12px;
 }
 .package-area .card-body p {
   font-size: 14px;
   color: gray;
   padding: 0;
   line-height: 1;
+  margin-bottom: 15px;
 }
 .package-area .card-body span {
   color: red;
   font-weight: 600;
 }
 /* photo gallery */
-.photo-gallary {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+
 .photo-gallery-header {
   border-left: 5px solid #009579;
   padding: 0px 10px;
@@ -375,17 +390,13 @@ form .btn:hover {
 .photo-gallery-header p {
   font-size: 15px;
   line-height: 1;
-}
-.gallery-area {
-  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 .image {
   position: relative;
   overflow: hidden;
-}
-.gallery {
-  padding-top: 25px;
+  padding-bottom: 24px;
 }
 
 .image img {
@@ -400,13 +411,6 @@ form .btn:hover {
 /* testimonial */
 .Border {
   border-right: 1px solid #ccc;
-}
-.testimonial-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.testimonial-area {
-  padding-top: 40px;
 }
 
 .testimonial {
@@ -436,7 +440,7 @@ form .btn:hover {
   padding: 0px 10px 10px;
 }
 .user-details h2 {
-  font-size: 14px;
+  font-size: 16px;
   font-size: 600;
   line-height: 28px;
   letter-spacing: -0.3px;
@@ -444,8 +448,7 @@ form .btn:hover {
 }
 .user-details p {
   font-size: 12px;
-  color: #ccc;
-  line-height: 1;
+  color: #333;
 }
 .quote {
   font-style: italic;
@@ -476,7 +479,6 @@ form .btn:hover {
   object-fit: cover;
   border: 4px solid #fff;
 } */
-
 .author {
   margin-top: 10px;
   color: #006660;
@@ -485,18 +487,16 @@ form .btn:hover {
 */
 /* subscribe */
 .subscribe {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin: 40px;
+  padding: 40px 0;
 }
 .subscribe-area {
   text-align: center;
-  align-items: center;
   padding: 50px;
   background-color: #006653;
-
   color: #fff;
 }
-.subscribe-area h3 {
+.subscribe-area li a {
   font-size: 35px;
   font-weight: 700;
   line-height: 2;
@@ -535,23 +535,23 @@ form .btn:hover {
   background-color: #000;
   color: #fff;
   padding-top: 40px;
-  padding-bottom: 40px;
 }
-.footer-area h3 {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.3;
+.footer-area li {
+  list-style: none;
 }
-.footer-area h3 i {
-  font-size: 16px;
-  font-weight: 600;
+.footer-area li a {
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  line-height: 12px;
 }
 .footer-area h4 {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: -0.3;
   line-height: 1.5;
-  margin: 0 15px 10px;
+  text-align: center;
 }
 .footer-end {
   border-top: 1px solid #979692;
