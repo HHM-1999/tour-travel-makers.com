@@ -286,9 +286,40 @@ form .btn:hover {
 .offer-image{
   padding: 20px;
 }
-
-
-
+.offer-card{
+  padding: 10px 0;
+  border: 1px solid #eee;
+}
+.offer-card-body{
+  margin: 20px;
+}
+.offer-card-body a{
+text-decoration: none;
+}
+.offer-card-body h5{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  line-height: 18px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.offer-card-body p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+.offer-card-body p small{
+  color: #333;
+}
+.offer-img{
+  margin: 10px 0;
+}
+.offer-img img {
+	padding: 10px;
+}
 /* travel-agent-area-start */
 .travel-agent-area{
   padding: 40px 0;
