@@ -157,9 +157,9 @@ form .btn:hover {
 }
 
 .logo i {
-  font-size: 25px;
-  color: #009579;
-  padding: 10px 0;
+	font-size: 25px;
+	color: #009579;
+	padding: 8px 0;
 }
 .logo a {
   color: #000;
@@ -170,9 +170,9 @@ form .btn:hover {
   padding: 12px 20px;
 }
 .navbar-brand h2 {
-  font-size: 27px;
-  padding: 5px 5px;
-  margin-bottom: 0;
+	font-size: 27px;
+	padding: 0px 5px;
+	margin-bottom: 0;
 }
 .sticky {
   position: fixed;
