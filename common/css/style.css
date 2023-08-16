@@ -4,6 +4,9 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+.container-fluid{
+  padding: 0;
+}
 p {
   margin: 0;
 }
@@ -14,6 +17,26 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+a{
+  text-decoration: none;
+}
+/* common */
+.section-heading {
+  border-left: 5px solid #009579;
+  padding: 0px 10px;
+  margin-bottom: 40px;
+}
+.section-heading a h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+}
+.section-heading p {
+  font-size: 15px;
+  line-height: 1;
+  margin-top: 10px;
+
 }
 /* top header */
 .top-header {
@@ -159,17 +182,23 @@ form .btn:hover {
 .logo i {
 	font-size: 25px;
 	color: #009579;
-	padding: 8px 0;
+	
 }
 .logo a {
   color: #000;
   font-weight: 700;
 }
-.navbar-expand-lg .navbar-nav .nav-link {
-  font-size: 14px;
+.main-header .navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 16px;
   padding: 12px 20px;
 }
-.navbar-brand h2 {
+.main-header .navbar-expand-lg .navbar-nav .nav-link:hover{
+  color: #006653;
+}
+.main-header .navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link{
+  padding-right: 0;
+}
+.main-header .navbar-brand h2 {
 	font-size: 27px;
 	padding: 0px 5px;
 	margin-bottom: 0;
@@ -247,153 +276,110 @@ form .btn:hover {
   background: #006653;
 }
 /* offers */
-.section-heading {
-  padding: 80px 0 40px 0;
+.offer-area {
+  padding: 40px 0;
 }
-.offer-title-header {
-  border-left: 5px solid #009579;
-  padding: 0px 10px;
+.offer-detail-area{
+  display: flex;
+  padding: 40px;
 }
-.offer-title-header h2 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #000;
+.offer-image{
+  padding: 20px;
 }
-.offer-title-header p {
-  font-size: 15px;
-  line-height: 1;
-  margin-bottom: 40px;
-}
-.offer-card .card {
-  border-radius: 0;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-.card-body .card-title {
-  font-size: 18px;
-  font-weight: 700;
-}
-.card-body .card-text {
-  font-size: 14px;
-}
-/* travel agents */
 
-.travel-agent-header {
-  border-left: 5px solid #009579;
-  padding: 0px 10px;
+
+
+/* travel-agent-area-start */
+.travel-agent-area{
+  padding: 40px 0;
 }
-.travel-agent-header h2 {
-  font-size: 30px;
-  font-weight: 600;
-  color: #000;
-}
-.travel-agent-header p {
-  font-size: 15px;
-  line-height: 1;
-  margin-bottom: 40px;
-}
+/*travel-agent-area-end   */
 
 /* discover bd */
-
-.discover-bd-header {
-  border-left: 5px solid #009579;
-  padding: 0px 10px;
+.discover-bd-area{
+  padding: 40px 0;
 }
-.discover-bd-header h2 {
-  font-size: 30px;
-  font-weight: 600;
-  color: #000;
-}
-.discover-bd-header p {
-  font-size: 15px;
-  line-height: 1;
-  margin-bottom: 40px;
-}
-.discover-bd-area .card {
+.discover-wrap{
+  position: relative;
   padding-bottom: 24px;
 }
-
-.card-img-overlay h3 {
+.discover-text{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.discover-text h3 {
   font-weight: 700;
   color: #fff;
+  font-size: 26px;
+  margin-left: 10px;
 }
 .card-img-overlay h3 i {
   font-size: 24px;
   color: #ccc;
-  padding: 0px 5px;
+ 
 }
-.card {
-  border: none;
-  border-radius: 0;
-}
+
 
 /* travel package */
-
-.package-header {
-  border-left: 5px solid #009579;
-  padding: 0px 10px;
+.package-area{
+  padding: 40px 0;
 }
-.package-header h2 {
-  font-size: 30px;
-  font-weight: 600;
-  color: #000;
+.package-slider .slick-slide{
+  margin-left:  15px;
+  margin-right:  15px;
 }
-.package-header p {
-  font-size: 15px;
-  line-height: 1;
-  margin-bottom: 40px;
+.package-slider .item{
+  border: 1px solid #eee;
 }
 
-.card-body .btn {
+.package-slider .slick-list {
+  margin-left: -15px;
+  margin-right: -15px;
+
+}
+.package-slider .slick-dots li button::before {
+	font-size: 10px;
+	color:#006653;
+
+}
+.package-slider .slick-dots li.slick-active button::before {
+	opacity: .75;
+	color:#006653 ;
+}
+.package-body .btn {
   background-color: #006653;
   color: #fff;
-  justify-content: center;
+  margin-bottom: 15px;
 }
-.card-body .btn:hover {
+.package-body .btn:hover {
   color: #fff;
   background-color: #000;
 }
-.package-area .card-body {
+.package-area .package-body {
   text-align: center;
+  padding-top: 15px;
 }
-.package-area .card {
-  border: 1px solid #ddd;
-}
-.package-area .card-body h5 {
+
+.package-area .package-body h5 {
   font-size: 18px;
   margin-bottom: 12px;
 }
-.package-area .card-body p {
+.package-area .package-body p {
   font-size: 14px;
   color: gray;
   padding: 0;
   line-height: 1;
   margin-bottom: 15px;
 }
-.package-area .card-body span {
+.package-area .package-body span {
   color: red;
   font-weight: 600;
 }
 /* photo gallery */
-
-.photo-gallery-header {
-  border-left: 5px solid #009579;
-  padding: 0px 10px;
-}
-.photo-gallery-header h2 {
-  font-size: 30px;
-  font-weight: 600;
-  color: #000;
-}
-.photo-gallery-header p {
-  font-size: 15px;
-  line-height: 1;
-  margin-bottom: 40px;
-}
-
 .image {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   padding-bottom: 24px;
 }
 
@@ -401,12 +387,18 @@ form .btn:hover {
   transition: transform 0.3s;
   width: 100%;
   height: auto;
+  transition: all 1s ease-in;
+  
 }
 
 .image:hover img {
   transform: scale(1.1);
+
 }
 /* testimonial */
+.testimonial-area{
+  padding: 40px 0;
+}
 .Border {
   border-right: 1px solid #ccc;
 }
@@ -485,8 +477,7 @@ form .btn:hover {
 */
 /* subscribe */
 .subscribe {
-  margin: 40px;
-  padding: 40px 0;
+  margin: 40px 0;
 }
 .subscribe-area {
   text-align: center;
@@ -530,31 +521,31 @@ form .btn:hover {
 /* footer */
 /* footer start */
 .footer-area {
-  background-color: #000;
-  color: #fff;
-  padding-top: 40px;
+	background-color: #000;
+	color: #fff;
+	padding: 20px 0;
 }
-.footer-area li {
+.footer-info li {
   list-style: none;
+  margin-bottom: 10px;
 }
-.footer-area li a {
-  font-size: 12px;
+.footer-info li a {
+  font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   color: #fff;
-  line-height: 12px;
+  line-height: 14px;
 }
-.footer-area h4 {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: -0.3;
-  line-height: 1.5;
-  text-align: center;
-}
-.footer-end {
+.footer-copyright{
   border-top: 1px solid #979692;
 }
-.footer-end h4 {
-  text-align: center;
-  padding: 10px 10px;
+
+.footer-end p {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: -0.3;
+	line-height: 1.5;
+	text-align: center;
+	padding-top: 12px;
 }

@@ -1,13 +1,12 @@
 //main-image//
-$('.responsive').slick({
+$('.package-slider').slick({
     dots: true,
     infinite: false,
-    centerPadding: '0px',
+    arrow: false,
     speed: 300,
     slidesToShow: 4,
-    slidesToScroll: 4,
-    responsive: [
-        {
+    slidesToScroll: 1,
+    responsive: [{
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
@@ -43,8 +42,7 @@ $('.center').slick({
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
@@ -75,12 +73,12 @@ $('.center').slick({
 
 ///sticky///
 const stickyNav = document.getElementById("sticky-navbar");
+
 function toggleStickyNavbar() {
     if (window.scrollY > stickyNav.offsetTop) {
         stickyNav.classList.add('sticky');
 
-    }
-    else {
+    } else {
         stickyNav.classList.remove("sticky");
     }
 }
@@ -93,6 +91,7 @@ function showSearchBox() {
     searchcontainer.classList.remove("hidden");
     console.log("hello")
 }
+
 function hideSearchBox() {
     var searchcontainer = document.getElementById("searchcontainer");
     searchcontainer.classList.add("hidden");
