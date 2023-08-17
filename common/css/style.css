@@ -28,7 +28,7 @@ a{
   margin-bottom: 40px;
 }
 .section-heading a h2 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
   color: #000;
 }
@@ -277,21 +277,17 @@ form .btn:hover {
 }
 /* offers */
 .offer-area {
-  padding: 40px 0;
+  padding: 80px 0 40px 0;
 }
-.offer-detail-area{
-  display: flex;
-  padding: 40px;
-}
+
 .offer-image{
   padding: 20px;
 }
 .offer-card{
-  padding: 10px 0;
   border: 1px solid #eee;
 }
 .offer-card-body{
-  margin: 20px;
+  padding: 20px;
 }
 .offer-card-body a{
 text-decoration: none;
@@ -301,15 +297,15 @@ text-decoration: none;
   font-weight: 700;
   color: #000;
   line-height: 18px;
-  margin-bottom: 10px;
-  margin-top: 0;
+  padding-bottom: 20px;
+  
 }
-.offer-card-body p{
-  font-size: 14px;
-  font-weight: 400;
-  color: #000;
-  line-height: 14px;
-  margin-bottom: 10px;
+.offer-card-body p {
+	font-size: 13px;
+	font-weight: 400;
+	color: #000;
+	line-height: 14px;
+	padding-bottom: 10px;
 }
 .offer-card-body p small{
   color: #333;
@@ -332,7 +328,7 @@ text-decoration: none;
 }
 .discover-wrap{
   position: relative;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 .discover-text{
   position: absolute;
@@ -345,7 +341,7 @@ text-decoration: none;
   font-size: 26px;
   margin-left: 10px;
 }
-.card-img-overlay h3 i {
+.discover-text h3 i {
   font-size: 24px;
   color: #ccc;
  
@@ -355,6 +351,9 @@ text-decoration: none;
 /* travel package */
 .package-area{
   padding: 40px 0;
+}
+.package-slider .slick-dotted.slick-slider {
+	 margin-bottom: 0px; 
 }
 .package-slider .slick-slide{
   margin-left:  15px;
@@ -426,6 +425,11 @@ text-decoration: none;
   transform: scale(1.1);
 
 }
+/* gallery-area-start */
+.gallery-area{
+  padding: 40px 0;
+}
+/* gallery-area-end */
 /* testimonial */
 .testimonial-area{
   padding: 40px 0;
@@ -434,10 +438,11 @@ text-decoration: none;
   border-right: 1px solid #ccc;
 }
 
-.testimonial {
-  padding: 0px 20px 20px;
-  background-color: #cccccc36;
-  color: #000;
+.testimonial-details {
+	padding: 20px;
+	background-color: #ccc;
+	color: #000;
+
 }
 
 .testimonial-sec {
@@ -445,9 +450,7 @@ text-decoration: none;
   padding: 10px 0;
   text-align: center;
 }
-.user-profile {
-  padding-top: 30px;
-}
+
 
 .user-profile .user-img img {
   width: 50px;
@@ -505,56 +508,59 @@ text-decoration: none;
   color: #006660;
   font-weight: 600;
 }
-*/
+
 /* subscribe */
-.subscribe {
-  margin: 40px 0;
+.subscribe-page-area {
+	margin-top: 40px;
 }
-.subscribe-area {
+.subscribe-details {
   text-align: center;
-  padding: 50px;
+  padding: 40px;
   background-color: #006653;
   color: #fff;
 }
-.subscribe-area li a {
+.subscribe-details li a {
   font-size: 35px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: -0.3px;
 }
-.subscribe-area p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 2;
+.subscribe-details p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 2;
+	padding-top: 20px;
 }
 .subscribe-form {
-  margin-left: 35%;
-  margin-top: 25px;
+	display: flex;
+	justify-content: center;
+  padding-top: 20px;
 }
 .subscribe-form input {
   padding: 10px 20px;
+  border-radius: 0;
 }
 .subscribe-button {
-  padding: 0 10px;
+  padding: 0px 10px;
 }
 .subscribe-button button {
-  padding: 11px;
-  background: #fff;
-  color: #000;
-  border: 2px solid #006610;
+
+	background: #fff;
+	color: #000;
+	border: 2px solid #006610;
+	padding: 10px;
 }
 .subscribe-button button:hover {
-  padding: 10px;
+
   background: #000;
   color: #fff;
 }
 
 /* footer */
-/* footer start */
 .footer-area {
 	background-color: #000;
 	color: #fff;
-	padding: 20px 0;
+	padding: 25px 0;
 }
 .footer-info li {
   list-style: none;
@@ -566,6 +572,15 @@ text-decoration: none;
   text-decoration: none;
   color: #fff;
   line-height: 14px;
+}
+.footer-info li a:hover{
+  color:#009579;
+}
+.footer-info li a i{
+    font-size: 12px;
+    margin-right: 5px;
+
+
 }
 .footer-copyright{
   border-top: 1px solid #979692;
@@ -579,4 +594,10 @@ text-decoration: none;
 	line-height: 1.5;
 	text-align: center;
 	padding-top: 12px;
+}
+.footer-end a{
+  text-decoration: none;
+}
+.footer-end a span{
+  color:#009579;
 }
