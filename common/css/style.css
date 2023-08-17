@@ -113,11 +113,13 @@ form .btn:hover {
   background-color: #333;
   color: #fff;
   display: block;
+ 
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   background-color: #212529;
   border-radius: 0;
   padding: 0;
+
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu a {
   text-decoration: none;
@@ -129,8 +131,9 @@ form .btn:hover {
   color: #000;
 }
 .dropdown:hover .dropdown-menu {
-  display: block;
-  left: 5px;
+	display: block;
+
+
 }
 /*  search box */
 .search_block {
