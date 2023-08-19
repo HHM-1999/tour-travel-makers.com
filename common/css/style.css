@@ -32,11 +32,17 @@ a {
   padding: 0px 10px;
   margin-bottom: 40px;
 }
-
+.section-heading a{
+  text-decoration: none;
+}
 .section-heading a h2 {
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 27px;
+  font-weight: 600;
   color: #000;
+
+}
+.section-heading a h2:hover{
+  color: #006653;
 }
 
 .section-heading p {
@@ -137,7 +143,6 @@ form .btn:hover {
 
 .dropdown-menu.show .drop-menu {
   background-color: #009579;
-  ;
   color: #fff;
   display: block;
 
@@ -148,7 +153,7 @@ form .btn:hover {
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-  background-color: #212529;
+
   border-radius: 0;
   padding: 0;
 
@@ -160,7 +165,7 @@ form .btn:hover {
   font-size: 16px;
   font-family: "Barlow", sans-serif;
   background-color: #009579;
-  padding: 8px 22px;
+  padding: 8px 20px;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu a:hover {
@@ -176,7 +181,7 @@ form .btn:hover {
 
 /*  search box */
 .search_block {
-  background: #006c6e;
+  background: #009579;
   padding: 14px 137px;
   position: fixed;
   top: 0;
@@ -195,7 +200,7 @@ form .btn:hover {
 .search_logo.display-flex button {
   background: #e6e4e4;
   border: none;
-  color: #006c6e;
+  color: #009579;
   cursor: pointer;
   display: inline-block;
   height: 40px;
@@ -243,7 +248,7 @@ form .btn:hover {
 }
 
 .main-header .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: #006653;
+  color: #009579;
 }
 
 .main-header .navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
@@ -255,6 +260,7 @@ form .btn:hover {
   padding: 0px 5px;
   margin-bottom: 0;
 }
+
 
 .sticky {
   position: fixed;
@@ -272,7 +278,7 @@ form .btn:hover {
 
 /* hero-img */
 .login form {
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
 .carousel-item img {
@@ -281,12 +287,14 @@ form .btn:hover {
 }
 
 .carousel-caption {
-  top: 100px;
-  left: 50px;
+  top: 50%;
+  left: 50%;
   padding: 0;
   color: #fff;
   width: 100%;
+  height: 100%;
   text-align: center;
+  transform: translate(-50%,-50%);
 
 }
 
@@ -294,7 +302,7 @@ form .btn:hover {
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .carousel-item input {
@@ -307,7 +315,6 @@ form .btn:hover {
   padding: 12px 20px;
   font-size: 17px;
   border: 1px solid #ddd;
-  border-radius: 10px;
   outline: none;
 }
 
@@ -343,7 +350,8 @@ form .btn:hover {
 }
 
 .form input.button:hover {
-  background: #006653;
+  color: #fff;
+  background-color: #000;
 }
 
 /* offers */
@@ -351,6 +359,7 @@ form .btn:hover {
 .offer-area {
   padding: 80px 0 40px 0;
 }
+
 .offer-card {
   border: 1px solid #eee;
   padding: 15px;
@@ -359,32 +368,53 @@ form .btn:hover {
   text-decoration: none;
 }
 .offer-card-body h5 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #000;
-  line-height: 18px;
-  margin-bottom: 20px;
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 19px;
+	color: #000;
+	margin-bottom: 20px;
 }
 .offer-card-body h5:hover{
   color:  #009579;
 }
 .offer-card-body p {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
-  color: #000;
-  line-height: 14px;
- margin-bottom: 10px;
+  line-height: 15px;
+ margin-bottom: 20px;
+ color: #000;
 }
 .offer-card-body p small {
   color: #333;
+  font-size: 13px;
+  line-height: 13px;
 }
-
-
+.offer-img{
+  overflow: hidden;
+}
+.offer-img img{
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.offer-img img:hover{
+  transform: scale(1.1);
+}
 
 
 /* travel-agent-area-start */
 .travel-agent-area {
   padding: 40px 0;
+}
+
+.travel-img{
+  overflow: hidden;
+}
+.travel-img img{
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.travel-img img:hover{
+  transform: scale(1.1);
 }
 
 /*travel-agent-area-end   */
@@ -398,7 +428,16 @@ form .btn:hover {
   position: relative;
   margin-bottom: 24px;
 }
-
+.discover-img{
+  overflow: hidden;
+}
+.discover-img img{
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.discover-img img:hover{
+  transform: scale(1.1);
+}
 .discover-text {
   position: absolute;
   top: 10px;
@@ -408,12 +447,15 @@ form .btn:hover {
 .discover-text h3 {
   font-weight: 700;
   color: #fff;
-  font-size: 26px;
+  font-size: 24px;
   margin-left: 10px;
+}
+.discover-text h3:hover{
+  color: #009579;
 }
 
 .discover-text h3 i {
-  font-size: 24px;
+  font-size: 20px;
   color: #ccc;
 
 }
@@ -445,19 +487,33 @@ form .btn:hover {
 
 .package-slider .slick-dots li button::before {
   font-size: 10px;
-  color: #006653;
+  color: #009579;
 
 }
 
 .package-slider .slick-dots li.slick-active button::before {
   opacity: .75;
-  color: #006653;
+  color: #009579;
+}
+.package-img{
+  overflow: hidden;
+}
+.package-img img{
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.package-img img:hover{
+  transform: scale(1.1);
+
 }
 
 .package-body .btn {
-  background-color: #006653;
+  background-color: #009579;
   color: #fff;
   margin-bottom: 15px;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 8px 20px;
 }
 
 .package-body .btn:hover {
@@ -473,6 +529,10 @@ form .btn:hover {
 .package-area .package-body h5 {
   font-size: 18px;
   margin-bottom: 12px;
+  color:#000;
+}
+.package-area .package-body h5:hover{
+  color: #009579;
 }
 
 .package-area .package-body p {
@@ -487,23 +547,24 @@ form .btn:hover {
   color: red;
   font-weight: 600;
 }
+.item a{
+  text-decoration: none;
+}
 
 /* photo gallery */
-.image {
-  position: relative;
-  overflow-x: hidden;
-  padding-bottom: 24px;
+
+.gallery-image {
+ margin-bottom: 24px;
+ overflow: hidden;
 }
 
-.image img {
-  transition: transform 0.3s;
-  width: 100%;
-  height: auto;
-  transition: all 1s ease-in;
-
+.gallery-image img {
+  transform: scale(1);
+  transition: all 0.5s ease;
 }
 
-.image:hover img {
+
+.gallery-image img:hover  {
   transform: scale(1.1);
 
 }
@@ -525,8 +586,8 @@ form .btn:hover {
 
 .testimonial-details {
   padding: 20px;
-  background-color: #ccc;
-  color: #000;
+  background-color: #009579;
+  color: #fff;
 
 }
 
@@ -543,33 +604,41 @@ form .btn:hover {
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #fff;
-  /* margin-left: 0px; */
 }
+
+
 
 .user-details {
   padding: 0px 10px 10px;
 }
+.user-details a{
+  text-decoration: none;
+}
 
-.user-details h2 {
-  font-size: 16px;
-  font-size: 600;
-  line-height: 28px;
-  letter-spacing: -0.3px;
-  font-family: "Poppins", sans-serif;
+.user-details a h2 {
+	font-size: 18px;
+	font-size: 600;
+	line-height: 18px;
+	letter-spacing: -0.3px;
+	font-family: "Poppins", sans-serif;
+	padding-top: 10px;
+  color: #fff;
 }
 
 .user-details p {
-  font-size: 12px;
-  color: #333;
-}
 
+    font-size: 12px;
+    color: #f4f4f4;
+    line-height: 25px;
+
+}
 .quote {
-  font-style: italic;
-  color: #000;
-  font-weight: 400;
-  font-size: 14px;
+	font-style: italic;
+	color: #ffff;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 24px;
 }
-
 /* .testimony {
   background-color: #000;
   border-radius: 5px;
@@ -593,11 +662,7 @@ form .btn:hover {
   object-fit: cover;
   border: 4px solid #fff;
 } */
-.author {
-  margin-top: 10px;
-  color: #006660;
-  font-weight: 600;
-}
+
 
 /* subscribe */
 .subscribe-page-area {
@@ -614,15 +679,21 @@ form .btn:hover {
 .subscribe-details li a {
   font-size: 35px;
   font-weight: 700;
-  line-height: 2;
+  line-height: 35px;
   letter-spacing: -0.3px;
 }
+.subscribe-text h3{
+  font-size: 35px;
+  line-height: 40px;
 
-.subscribe-details p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 2;
-  padding-top: 20px;
+  color: #fff;
+}
+.subscribe-text p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+	padding-top: 20px;
+	color: #fff;
 }
 
 .subscribe-form {
@@ -642,67 +713,115 @@ form .btn:hover {
 
 .subscribe-button button {
 
-  background: #fff;
-  color: #000;
+  color: #fff;
+  background-color: #000;
   border: 2px solid #006610;
   padding: 10px;
 }
 
 .subscribe-button button:hover {
-
-  background: #000;
-  color: #fff;
+  color: #006653;
+ 
 }
 
 /* footer */
+
 .footer-area {
   background-color: #000;
   color: #fff;
-  padding: 25px 0;
+
+}
+.footer-info {
+		padding: 40px 0;
+    
+}
+.footer-info ul{
+  margin: 0;
+  padding: 0;
 }
 
-.footer-info li {
+.footer-info ul li {
   list-style: none;
   margin-bottom: 10px;
+
 }
 
-.footer-info li a {
+.footer-info ul li a{
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   color: #fff;
   line-height: 14px;
+  margin-right: 5px;
+  width: 30px;
 }
 
-.footer-info li a:hover {
+.footer-info ul li a:hover {
   color: #009579;
 }
 
-.footer-info li a i {
+.footer-info ul li a i {
   font-size: 12px;
-  margin-right: 5px;
-
+  margin-right: 15px;
+  color: #fff;
+}
+.footer-info ul li a i:hover{
+  color: #009579;
 
 }
+
 
 .footer-copyright {
   border-top: 1px solid #979692;
 }
 
 .footer-end p {
-  text-align: center;
+ 
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.3;
-  line-height: 1.5;
+  line-height: 14px;
   text-align: center;
-  padding-top: 12px;
-}
+padding: 20px 0;
 
+}
 .footer-end a {
   text-decoration: none;
 }
 
 .footer-end a span {
   color: #009579;
+}
+
+/* responsive */
+
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+
+ 
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+ 
+/* Extra small Device. */
+@media (max-width: 767px) {
+
+ 
+}
+ 
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
 }
