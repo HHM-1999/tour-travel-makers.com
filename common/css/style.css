@@ -65,7 +65,6 @@ a {
   padding: 5px 0;
   margin-bottom: 0;
 }
-
 .top-header .support i {
   font-size: 14px;
   padding: 5px 0px;
@@ -145,20 +144,14 @@ form .btn:hover {
   background-color: #009579;
   color: #fff;
   display: block;
-
 }
-
 .navbar {
   padding: 0;
 }
-
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-
   border-radius: 0;
   padding: 0;
-
 }
-
 .navbar-expand-lg .navbar-nav .dropdown-menu a {
   text-decoration: none;
   color: #fff;
@@ -172,11 +165,8 @@ form .btn:hover {
   color: #009579;
   background-color: #fff;
 }
-
 .dropdown:hover .dropdown-menu {
   display: block;
-
-
 }
 
 /*  search box */
@@ -229,6 +219,7 @@ form .btn:hover {
 /* main header */
 .main-header {
   background-color: #fff;
+  padding: 5px;
 }
 
 .logo i {
@@ -260,8 +251,6 @@ form .btn:hover {
   padding: 0px 5px;
   margin-bottom: 0;
 }
-
-
 .sticky {
   position: fixed;
   top: 0px;
@@ -277,83 +266,92 @@ form .btn:hover {
 }
 
 /* hero-img */
-.login form {
-  margin-bottom: 30px;
+.hero-area{
+  padding: 80px 0;
 }
-
 .carousel-item img {
   height: 550px;
   object-fit: cover;
 }
-
-.carousel-caption {
-  top: 50%;
-  left: 50%;
-  padding: 0;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transform: translate(-50%,-50%);
-
+.form-title h1 {
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 50px;
 }
-
-.form h1 {
-  font-size: 40px;
+.form-text{
+  color: #f4f4f4;
+}
+/* .form h1 {
+  font-size: 30px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 50px;
-}
-
-.carousel-item input {
+  margin-bottom: 20px;
+} */
+.form-input input{
+  border-radius: 0;
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  font-size: 17px;
+  border: 1px solid #ddd;
   background-color: transparent;
-  color: #fff;
+	color: #fff;
+	width: 100%;
+	
 }
 
-.form input {
-  margin-bottom: 35px;
+/* .form input {
+  margin-bottom: 20px;
   padding: 12px 20px;
   font-size: 17px;
   border: 1px solid #ddd;
   outline: none;
+  width: 100%;
+} */
+.signup{
+  margin-top:10px ;
 }
-
-.form input:focus {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-}
-
-.form a {
+.signup a {
   font-size: 16px;
   color: #f4f4f4;
   text-decoration: none;
 }
-
-.form a:hover {
-  text-decoration: underline;
-}
-
-.form input.button {
+.login-btn button{
   color: #fff;
   background: #009579;
-  font-size: 1.2rem;
+  font-size: 20px;
+  line-height: 26px;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-top: 30px;
+  margin-top: 10px;
   cursor: pointer;
   transition: 0.4s;
-  padding: 10px 80px;
+  padding: 10px 50px;
   width: auto;
   border: 0;
   border-radius: 0;
   text-transform: uppercase;
-
 }
-
-.form input.button:hover {
+/* .form input.button {
+  color: #fff;
+  background: #009579;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 10px 50px;
+  width: auto;
+  border: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+} */
+.login-btn button:hover {
   color: #fff;
   background-color: #000;
 }
-
 /* offers */
 
 .offer-area {
@@ -580,10 +578,10 @@ form .btn:hover {
   padding: 40px 0;
 }
 
-.Border {
-  border-right: 1px solid #ccc;
-}
 
+.testimony{
+  margin-bottom: 24px;
+}
 .testimonial-details {
   padding: 20px;
   background-color: #009579;
@@ -782,7 +780,7 @@ form .btn:hover {
   letter-spacing: -0.3;
   line-height: 14px;
   text-align: center;
-padding: 20px 0;
+  padding: 20px 0;
 
 }
 .footer-end a {
@@ -810,7 +808,99 @@ padding: 20px 0;
  
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
+  /* common-start */
+  .section-heading a h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+  }
+  .section-heading p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  /* common-end */
+  .main-header .navbar-brand h2 {
+    font-size: 25px;
+    padding: 0px 5px;
+    margin-bottom: 0;
+  }
+  .login-btn button {
+    color: #fff;
+    background: #009579;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 10px 50px;
+    width: auto;
+    border: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+  }
+ .offer-card-area{
+  margin-bottom: 20px;
+}
+.offer-card {
+	border: 1px solid #eee;
+	padding: 32px;
+}
+.offer-card-body h5 {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 19px;
+	color: #000;
+	margin-bottom: 20px;
+}
+.offer-card-body p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 15px;
+	margin-bottom: 20px;
+	color: #000;
+}
+.offer-card-body p small {
+	color: #333;
+	font-size: 12px;
+	line-height: 13px;
+}
+.travel-img{
+  margin-bottom: 20px;
+}
+.gallery-image-area{
+  margin-bottom: 20px;
+}
+.package-area .package-body h5 {
+	font-size: 16px;
+	margin-bottom: 12px;
+	color: #000;
+}
+.package-body .btn {
+	background-color: #009579;
+	color: #fff;
+	margin-bottom: 15px;
+	border-radius: 0;
+	font-size: 14px;
+	padding: 8px 20px;
+}
+.discover-text h3 {
+	font-weight: 700;
+	color: #fff;
+	font-size: 20px;
+	margin-left: 10px;
+}
+.user-details a h2 {
+	font-size: 16px;
+	font-size: 600;
+	line-height: 18px;
+	letter-spacing: -0.3px;
+	font-family: "Poppins", sans-serif;
+	padding-top: 10px;
+	color: #fff;
+}
 
 }
 
@@ -823,5 +913,314 @@ padding: 20px 0;
  
 /* SM Small Device :550px. */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+/* common-start  */
+.section-heading a h2 {
+	font-size: 22px;
+	font-weight: 600;
+	color: #000;
+}
+.section-heading p {
+	font-size: 12px;
+	line-height: 1;
+	margin-top: 10px;
+}
+/* common-end */
 
+
+  .top-header{
+    display: none;
+  }
+  .main-header .navbar-brand h2 {
+    font-size: 22px;
+    padding: 0px 5px;
+    margin-bottom: 0;
+  }
+  .logo i {
+    font-size: 20px;
+    color: #009579;
+  }
+  .form-title h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .login-btn button {
+    color: #fff;
+    background: #009579;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 10px 40px;
+    width: auto;
+    border: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+  }
+  .offer-card-body h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .offer-card-body p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  .offer-card-body p small {
+    color: #333;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .discover-text h3 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    margin: 15px;
+  }
+  .package-area .package-body h5 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #000;
+  }
+  .package-area .package-body p {
+    font-size: 12px;
+    color: gray;
+    padding: 0;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  .package-body .btn {
+    background-color: #009579;
+    color: #fff;
+    margin-bottom: 15px;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+  .travel-img{
+    margin-bottom: 20px;
+  }
+  .offer-card-area{
+    margin-bottom: 20px;
+  }
+  .form-input input {
+    border-radius: 0;
+    margin-bottom: 30px;
+    padding: 12px 20px;
+    font-size: 17px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+  }
+  .gallery-image {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .subscribe-text h3 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+  }
+  .subscribe-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-top: 12px;
+    color: #fff;
+  }
+  .subscribe-button {
+    padding: 0px 5px;
+  }
+  .subscribe-button button {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #006610;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .footer-end p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.3;
+    line-height: 22px;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .footer-info {
+    padding: 20px 0;
+  }
+}
+/* SM Small Device :320px. */
+@media only screen and (min-width: 320px) and (max-width: 550px){
+/* common-start  */
+.section-heading a h2 {
+	font-size: 22px;
+	font-weight: 600;
+	color: #000;
+}
+.section-heading p {
+	font-size: 12px;
+	line-height: 1;
+	margin-top: 10px;
+}
+/* common-end */
+  .top-header{
+    display: none;
+  }
+  .main-header .navbar-brand h2 {
+    font-size: 18px;
+    padding: 0px 5px;
+    margin-bottom: 0;
+  }
+  .logo i {
+    font-size: 18px;
+    color: #009579;
+  }
+  .form-title h1 {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .form-input input {
+    border-radius: 0;
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    font-size: 17px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+  }
+  .login-btn button {
+    color: #fff;
+    background: #009579;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 10px 40px;
+    width: auto;
+    border: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+  }
+  .signup {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .offer-card-body h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .offer-card-body p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  .offer-card-body p small {
+    color: #333;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .travel-img{
+    margin-bottom: 20px;
+  }
+  .discover-text h3 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
+    margin: 5px;
+  }
+  .package-area .package-body h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  .package-area .package-body p {
+    font-size: 13px;
+    color: gray;
+    padding: 0;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .package-body .btn {
+    background-color: #009579;
+    color: #fff;
+    margin-bottom: 15px;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+  .user-details a h2 {
+    font-size: 16px;
+    font-size: 600;
+    line-height: 18px;
+    letter-spacing: -0.3px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 10px;
+    color: #fff;
+  }
+  .quote {
+    font-style: italic;
+    color: #ffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .subscribe-text h3 {
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+  }
+  .subscribe-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-top: 15px;
+    color: #fff;
+  }
+  .subscribe-form input {
+    padding: 10px 10px;
+    border-radius: 0;
+  }
+  .subscribe-button {
+    padding: 0px 5px;
+  }
+  .subscribe-button button {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #006610;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .footer-info {
+    padding: 15px;
+  }
+  .footer-end p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.3;
+    line-height: 22px;
+    text-align: center;
+    padding: 15px 0;
+  }
 }
