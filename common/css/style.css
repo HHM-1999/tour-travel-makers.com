@@ -286,6 +286,7 @@ form .btn:hover {
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 
 }
 
@@ -406,6 +407,7 @@ form .btn:hover {
 
 .offer-card .offer-img {
   overflow: hidden;
+  width: 100%s;
 }
 
 .offer-card .offer-img img {
@@ -858,6 +860,7 @@ form .btn:hover {
     line-height: 18px;
     margin-top: 10px;
   }
+  
   .main-header .navbar-brand h2 {
     font-size: 25px;
     padding: 0px 5px;
@@ -901,6 +904,9 @@ form .btn:hover {
     font-size: 20px;
     margin-left: 10px;
   }
+  .testimonial-details{
+    margin-bottom: 24px;
+  }
   .user-details a h2 {
     font-size: 16px;
     line-height: 25px;
@@ -922,6 +928,43 @@ form .btn:hover {
   }
   .top-header {
     display: none;
+  }
+  .search_logo input {
+	border: 2px solid #ddd;
+	display: inline-block;
+	margin-right: auto;
+	padding: 10px;
+	width: calc(100% - 90px);
+}
+  .search_block {
+    background: #009579;
+    padding: 12px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999999;
+  }
+  .search_logo.display-flex button {
+    background: #e6e4e4;
+    border: none;
+    color: #009579;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+  }
+  .search_logo.display-flex a {
+    background: #e6e4e4;
+    border: none;
+    color: #c4161c;
+    cursor: pointer;
+    display: inline-block;
+    height: 39px;
+    line-height: 42px;
+    text-align: center;
+    width: 39px;
   }
   .main-header .navbar-brand h2 {
     font-size: 18px;
@@ -1044,6 +1087,43 @@ form .btn:hover {
     line-height: 1;
     margin-top: 10px;
   }
+  .search_logo input {
+    border: 2px solid #ddd;
+    display: inline-block;
+    margin-right: auto;
+    padding: 10px;
+    width: calc(100% - 112px);
+  }
+    .search_block {
+      background: #009579;
+      padding: 12px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 99999999;
+    }
+    .search_logo.display-flex button {
+      background: #e6e4e4;
+      border: none;
+      color: #009579;
+      cursor: pointer;
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      width: 40px;
+    }
+    .search_logo.display-flex a {
+      background: #e6e4e4;
+      border: none;
+      color: #c4161c;
+      cursor: pointer;
+      display: inline-block;
+      height: 39px;
+      line-height: 42px;
+      text-align: center;
+      width: 39px;
+    }
   .top-header {
     display: none;
   }

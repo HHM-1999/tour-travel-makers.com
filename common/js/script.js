@@ -52,6 +52,15 @@ $('.center').slick({
             }
         },
         {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
             breakpoint: 600,
             settings: {
                 slidesToShow: 2,
