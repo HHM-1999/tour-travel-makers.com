@@ -32,16 +32,19 @@ a {
   padding: 0px 10px;
   margin-bottom: 40px;
 }
-.section-heading a{
+
+.section-heading a {
   text-decoration: none;
 }
+
 .section-heading a h2 {
   font-size: 27px;
   font-weight: 600;
   color: #000;
 
 }
-.section-heading a h2:hover{
+
+.section-heading a h2:hover {
   color: #006653;
 }
 
@@ -65,6 +68,7 @@ a {
   padding: 5px 0;
   margin-bottom: 0;
 }
+
 .top-header .support i {
   font-size: 14px;
   padding: 5px 0px;
@@ -137,7 +141,7 @@ form .btn:hover {
   min-width: 12rem;
   padding-top: 20px;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 0;
 }
 
 .dropdown-menu.show .drop-menu {
@@ -145,13 +149,16 @@ form .btn:hover {
   color: #fff;
   display: block;
 }
+
 .navbar {
   padding: 0;
 }
+
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   border-radius: 0;
   padding: 0;
 }
+
 .navbar-expand-lg .navbar-nav .dropdown-menu a {
   text-decoration: none;
   color: #fff;
@@ -165,6 +172,7 @@ form .btn:hover {
   color: #009579;
   background-color: #fff;
 }
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -251,6 +259,7 @@ form .btn:hover {
   padding: 0px 5px;
   margin-bottom: 0;
 }
+
 .sticky {
   position: fixed;
   top: 0px;
@@ -266,57 +275,61 @@ form .btn:hover {
 }
 
 /* hero-img */
-.hero-area{
-  padding: 80px 0;
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: auto;
+  left: 50%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
 }
+
 .carousel-item img {
   height: 550px;
   object-fit: cover;
 }
+
 .form-title h1 {
-	font-size: 35px;
-	font-weight: 600;
-	text-align: center;
-	margin-bottom: 50px;
-}
-.form-text{
-  color: #f4f4f4;
-}
-/* .form h1 {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 20px;
-} */
-.form-input input{
-  border-radius: 0;
-  margin-bottom: 15px;
-  padding: 12px 20px;
-  font-size: 17px;
-  border: 1px solid #ddd;
-  background-color: transparent;
-	color: #fff;
-	width: 100%;
-	
+  margin-bottom: 50px;
 }
 
-/* .form input {
-  margin-bottom: 20px;
-  padding: 12px 20px;
-  font-size: 17px;
-  border: 1px solid #ddd;
-  outline: none;
-  width: 100%;
-} */
-.signup{
-  margin-top:10px ;
+.form-text {
+  color: #f4f4f4;
 }
+
+.form-input input {
+	border-radius: 0;
+	margin-bottom: 20px;
+	padding: 10px 18px;
+	font-size: 17px;
+	border: 1px solid #ddd;
+	background-color: transparent;
+	color: #fff;
+}
+
+.signup {
+  margin-top: 20px;
+}
+
 .signup a {
   font-size: 16px;
   color: #f4f4f4;
   text-decoration: none;
 }
-.login-btn button{
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.login-btn button {
   color: #fff;
   background: #009579;
   font-size: 20px;
@@ -332,6 +345,7 @@ form .btn:hover {
   border-radius: 0;
   text-transform: uppercase;
 }
+
 /* .form input.button {
   color: #fff;
   background: #009579;
@@ -352,6 +366,7 @@ form .btn:hover {
   color: #fff;
   background-color: #000;
 }
+
 /* offers */
 
 .offer-area {
@@ -362,40 +377,48 @@ form .btn:hover {
   border: 1px solid #eee;
   padding: 15px;
 }
-.offer-card-body a {
-  text-decoration: none;
+
+.offer-card .offer-card-body h5 {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 20px;
 }
-.offer-card-body h5 {
-	font-size: 19px;
-	font-weight: 600;
-	line-height: 19px;
-	color: #000;
-	margin-bottom: 20px;
+
+.offer-card:hover .offer-card-body h5 {
+  color: #009579;
 }
-.offer-card-body h5:hover{
-  color:  #009579;
-}
-.offer-card-body p {
+
+.offer-card .offer-card-body p {
   font-size: 15px;
   font-weight: 400;
-  line-height: 15px;
- margin-bottom: 20px;
- color: #000;
+  line-height: 22px;
+  margin-bottom: 20px;
+  color: #000;
 }
-.offer-card-body p small {
+
+.offer-card .offer-card-body span {
   color: #333;
   font-size: 13px;
-  line-height: 13px;
+  line-height: 20px;
 }
-.offer-img{
+
+.offer-card .offer-img {
   overflow: hidden;
 }
-.offer-img img{
+
+.offer-card .offer-img img {
   transform: scale(1);
   transition: all 0.5s ease;
 }
-.offer-img img:hover{
+
+.offer-card .offer-img img:hover {
   transform: scale(1.1);
+}
+
+.offer-card-section .col-lg-6:last-child .offer-card {
+  margin-bottom: 0;
 }
 
 
@@ -404,14 +427,16 @@ form .btn:hover {
   padding: 40px 0;
 }
 
-.travel-img{
+.travel-img {
   overflow: hidden;
 }
-.travel-img img{
+
+.travel-img img {
   transform: scale(1);
   transition: all 0.5s ease;
 }
-.travel-img img:hover{
+
+.travel-img img:hover {
   transform: scale(1.1);
 }
 
@@ -426,16 +451,20 @@ form .btn:hover {
   position: relative;
   margin-bottom: 24px;
 }
-.discover-img{
+
+.discover-img {
   overflow: hidden;
 }
-.discover-img img{
+
+.discover-img img {
   transform: scale(1);
   transition: all 0.5s ease;
 }
-.discover-img img:hover{
+
+.discover-img img:hover {
   transform: scale(1.1);
 }
+
 .discover-text {
   position: absolute;
   top: 10px;
@@ -448,7 +477,8 @@ form .btn:hover {
   font-size: 24px;
   margin-left: 10px;
 }
-.discover-text h3:hover{
+
+.discover-text h3:hover {
   color: #009579;
 }
 
@@ -493,14 +523,17 @@ form .btn:hover {
   opacity: .75;
   color: #009579;
 }
-.package-img{
+
+.package-img {
   overflow: hidden;
 }
-.package-img img{
+
+.package-img img {
   transform: scale(1);
   transition: all 0.5s ease;
 }
-.package-img img:hover{
+
+.package-img img:hover {
   transform: scale(1.1);
 
 }
@@ -527,9 +560,10 @@ form .btn:hover {
 .package-area .package-body h5 {
   font-size: 18px;
   margin-bottom: 12px;
-  color:#000;
+  color: #000;
 }
-.package-area .package-body h5:hover{
+
+.package-area .package-body h5:hover {
   color: #009579;
 }
 
@@ -545,15 +579,16 @@ form .btn:hover {
   color: red;
   font-weight: 600;
 }
-.item a{
+
+.item a {
   text-decoration: none;
 }
 
 /* photo gallery */
 
 .gallery-image {
- margin-bottom: 24px;
- overflow: hidden;
+  margin-bottom: 24px;
+  overflow: hidden;
 }
 
 .gallery-image img {
@@ -562,7 +597,7 @@ form .btn:hover {
 }
 
 
-.gallery-image img:hover  {
+.gallery-image img:hover {
   transform: scale(1.1);
 
 }
@@ -579,9 +614,10 @@ form .btn:hover {
 }
 
 
-.testimony{
+.testimony {
   margin-bottom: 24px;
 }
+
 .testimonial-details {
   padding: 20px;
   background-color: #009579;
@@ -609,34 +645,37 @@ form .btn:hover {
 .user-details {
   padding: 0px 10px 10px;
 }
-.user-details a{
+
+.user-details a {
   text-decoration: none;
 }
 
 .user-details a h2 {
-	font-size: 18px;
-	font-size: 600;
-	line-height: 18px;
-	letter-spacing: -0.3px;
-	font-family: "Poppins", sans-serif;
-	padding-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
   color: #fff;
 }
 
 .user-details p {
 
-    font-size: 12px;
-    color: #f4f4f4;
-    line-height: 25px;
+  font-size: 12px;
+  color: #f4f4f4;
+  line-height: 25px;
 
 }
+
 .quote {
-	font-style: italic;
-	color: #ffff;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 24px;
+  font-style: italic;
+  color: #ffff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
 }
+
 /* .testimony {
   background-color: #000;
   border-radius: 5px;
@@ -680,18 +719,20 @@ form .btn:hover {
   line-height: 35px;
   letter-spacing: -0.3px;
 }
-.subscribe-text h3{
+
+.subscribe-text h3 {
   font-size: 35px;
   line-height: 40px;
 
   color: #fff;
 }
+
 .subscribe-text p {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 32px;
-	padding-top: 20px;
-	color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-top: 20px;
+  color: #fff;
 }
 
 .subscribe-form {
@@ -719,7 +760,7 @@ form .btn:hover {
 
 .subscribe-button button:hover {
   color: #006653;
- 
+
 }
 
 /* footer */
@@ -729,11 +770,13 @@ form .btn:hover {
   color: #fff;
 
 }
+
 .footer-info {
-		padding: 40px 0;
-    
+  padding: 40px 0;
+
 }
-.footer-info ul{
+
+.footer-info ul {
   margin: 0;
   padding: 0;
 }
@@ -744,7 +787,7 @@ form .btn:hover {
 
 }
 
-.footer-info ul li a{
+.footer-info ul li a {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
@@ -763,7 +806,8 @@ form .btn:hover {
   margin-right: 15px;
   color: #fff;
 }
-.footer-info ul li a i:hover{
+
+.footer-info ul li a i:hover {
   color: #009579;
 
 }
@@ -774,7 +818,7 @@ form .btn:hover {
 }
 
 .footer-end p {
- 
+
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.3;
@@ -783,6 +827,7 @@ form .btn:hover {
   padding: 20px 0;
 
 }
+
 .footer-end a {
   text-decoration: none;
 }
@@ -794,287 +839,88 @@ form .btn:hover {
 /* responsive */
 
 /* XL Device :1200px. */
-@media (min-width: 1200px) and (max-width: 1500px) {
-
-
-}
+@media (min-width: 1200px) and (max-width: 1500px) {}
 
 /* LG Device :992px. */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {}
 
 
-}
-
- 
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* common-start */
+  .container{
+    max-width: 100%;
+  }
   .section-heading a h2 {
     font-size: 24px;
-    font-weight: 600;
-    color: #000;
   }
   .section-heading p {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 18px;
     margin-top: 10px;
   }
-  /* common-end */
   .main-header .navbar-brand h2 {
     font-size: 25px;
     padding: 0px 5px;
     margin-bottom: 0;
   }
   .login-btn button {
-    color: #fff;
-    background: #009579;
     font-size: 18px;
     line-height: 26px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: 0.4s;
-    padding: 10px 50px;
-    width: auto;
-    border: 0;
-    border-radius: 0;
-    text-transform: uppercase;
-  }
- .offer-card-area{
-  margin-bottom: 20px;
-}
-.offer-card {
-	border: 1px solid #eee;
-	padding: 32px;
-}
-.offer-card-body h5 {
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 19px;
-	color: #000;
-	margin-bottom: 20px;
-}
-.offer-card-body p {
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 15px;
-	margin-bottom: 20px;
-	color: #000;
-}
-.offer-card-body p small {
-	color: #333;
-	font-size: 12px;
-	line-height: 13px;
-}
-.travel-img{
-  margin-bottom: 20px;
-}
-.gallery-image-area{
-  margin-bottom: 20px;
-}
-.package-area .package-body h5 {
-	font-size: 16px;
-	margin-bottom: 12px;
-	color: #000;
-}
-.package-body .btn {
-	background-color: #009579;
-	color: #fff;
-	margin-bottom: 15px;
-	border-radius: 0;
-	font-size: 14px;
-	padding: 8px 20px;
-}
-.discover-text h3 {
-	font-weight: 700;
-	color: #fff;
-	font-size: 20px;
-	margin-left: 10px;
-}
-.user-details a h2 {
-	font-size: 16px;
-	font-size: 600;
-	line-height: 18px;
-	letter-spacing: -0.3px;
-	font-family: "Poppins", sans-serif;
-	padding-top: 10px;
-	color: #fff;
-}
-
-}
-
- 
-/* Extra small Device. */
-@media (max-width: 767px) {
-
- 
-}
- 
-/* SM Small Device :550px. */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-/* common-start  */
-.section-heading a h2 {
-	font-size: 22px;
-	font-weight: 600;
-	color: #000;
-}
-.section-heading p {
-	font-size: 12px;
-	line-height: 1;
-	margin-top: 10px;
-}
-/* common-end */
-
-
-  .top-header{
-    display: none;
-  }
-  .main-header .navbar-brand h2 {
-    font-size: 22px;
-    padding: 0px 5px;
-    margin-bottom: 0;
-  }
-  .logo i {
-    font-size: 20px;
-    color: #009579;
-  }
-  .form-title h1 {
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  .login-btn button {
-    color: #fff;
-    background: #009579;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: 0.4s;
-    padding: 10px 40px;
-    width: auto;
-    border: 0;
-    border-radius: 0;
-    text-transform: uppercase;
   }
   .offer-card-body h5 {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
-    color: #000;
-    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .offer-card {
+    margin-bottom: 24px;
   }
   .offer-card-body p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .offer-card-body span {
     font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    margin-bottom: 15px;
-    color: #000;
+    line-height: 18px;
   }
-  .offer-card-body p small {
-    color: #333;
-    font-size: 11px;
-    line-height: 13px;
+  .travel-img {
+    margin-bottom: 24px;
   }
-  .discover-text h3 {
-    font-weight: 700;
-    color: #fff;
-    font-size: 20px;
-    margin: 15px;
+  .gallery-image-area {
+    margin-bottom: 24px;
   }
   .package-area .package-body h5 {
     font-size: 16px;
     margin-bottom: 12px;
-    color: #000;
-  }
-  .package-area .package-body p {
-    font-size: 12px;
-    color: gray;
-    padding: 0;
-    line-height: 1;
-    margin-bottom: 15px;
   }
   .package-body .btn {
-    background-color: #009579;
-    color: #fff;
-    margin-bottom: 15px;
-    border-radius: 0;
-    font-size: 14px;
-    padding: 5px 15px;
-  }
-  .travel-img{
-    margin-bottom: 20px;
-  }
-  .offer-card-area{
-    margin-bottom: 20px;
-  }
-  .form-input input {
-    border-radius: 0;
-    margin-bottom: 30px;
-    padding: 12px 20px;
-    font-size: 17px;
-    border: 1px solid #ddd;
-    background-color: transparent;
-    color: #fff;
-    width: 100%;
-  }
-  .gallery-image {
-    margin-bottom: 20px;
-    overflow: hidden;
-  }
-  .subscribe-text h3 {
-    font-size: 30px;
-    line-height: 40px;
-    color: #fff;
-  }
-  .subscribe-text p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 32px;
-    padding-top: 12px;
-    color: #fff;
-  }
-  .subscribe-button {
-    padding: 0px 5px;
-  }
-  .subscribe-button button {
-    color: #fff;
-    background-color: #000;
-    border: 2px solid #006610;
-    padding: 10px;
     font-size: 14px;
   }
-  .footer-end p {
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: -0.3;
-    line-height: 22px;
-    text-align: center;
-    padding: 15px 0;
+  .discover-text h3 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .user-details a h2 {
+    font-size: 16px;
+    line-height: 25px;
   }
   .footer-info {
-    padding: 20px 0;
+    padding: 20px;
   }
 }
-/* SM Small Device :320px. */
-@media only screen and (min-width: 320px) and (max-width: 550px){
-/* common-start  */
-.section-heading a h2 {
-	font-size: 22px;
-	font-weight: 600;
-	color: #000;
-}
-.section-heading p {
-	font-size: 12px;
-	line-height: 1;
-	margin-top: 10px;
-}
-/* common-end */
-  .top-header{
+
+/* Extra small Device. */
+@media (max-width: 767px) {
+  .section-heading a h2 {
+    font-size: 22px;
+  }
+  .section-heading p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  .top-header {
     display: none;
   }
   .main-header .navbar-brand h2 {
@@ -1082,133 +928,109 @@ form .btn:hover {
     padding: 0px 5px;
     margin-bottom: 0;
   }
+  .main-header .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 5px 30px;
+  }
+  .main-header .navbar-expand-lg .navbar-nav .dropdown-menu a {
+    font-size: 14px;
+    padding: 5px 30px;
+  }
+  .main-header.navbar-expand-lg .navbar-nav .dropdown-menu {
+    font-size: 14px;
+    padding: 5px 30px;
+  }
   .logo i {
     font-size: 18px;
-    color: #009579;
   }
   .form-title h1 {
-    font-size: 26px;
-    font-weight: 600;
-    text-align: center;
+    font-size: 25px;
     margin-bottom: 70px;
   }
   .form-input input {
-    border-radius: 0;
-    margin-bottom: 20px;
-    padding: 8px 20px;
-    font-size: 17px;
-    border: 1px solid #ddd;
-    background-color: transparent;
-    color: #fff;
-    width: 100%;
+    margin-bottom: 30px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .signup a {
+    font-size: 14px;
   }
   .login-btn button {
-    color: #fff;
-    background: #009579;
     font-size: 15px;
     line-height: 21px;
-    font-weight: 700;
-    letter-spacing: 1px;
     margin-top: 10px;
-    cursor: pointer;
-    transition: 0.4s;
     padding: 10px 40px;
-    width: auto;
-    border: 0;
-    border-radius: 0;
-    text-transform: uppercase;
   }
   .signup {
     margin-top: 30px;
     font-size: 14px;
   }
+  .offer-card {
+    margin-bottom: 24px;
+  }
+  .offer-card-body{
+    padding-bottom: 10px;
+  }
   .offer-card-body h5 {
     font-size: 16px;
-    font-weight: 600;
     line-height: 19px;
-    color: #000;
     margin-bottom: 15px;
   }
   .offer-card-body p {
     font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
+    line-height: 18px;
     margin-bottom: 15px;
-    color: #000;
   }
-  .offer-card-body p small {
-    color: #333;
-    font-size: 11px;
-    line-height: 13px;
+  .offer-card-body span {
+    font-size: 10px;
+    line-height: 16px;
   }
-  .travel-img{
-    margin-bottom: 20px;
+  .travel-img {
+    margin-bottom: 24px;
   }
   .discover-text h3 {
-    font-weight: 700;
-    color: #fff;
     font-size: 18px;
     margin: 5px;
   }
   .package-area .package-body h5 {
     font-size: 16px;
-    margin-bottom: 20px;
-    color: #000;
+    margin-bottom: 24px;
   }
   .package-area .package-body p {
     font-size: 13px;
-    color: gray;
     padding: 0;
     line-height: 20px;
     margin-bottom: 10px;
   }
   .package-body .btn {
-    background-color: #009579;
-    color: #fff;
-    margin-bottom: 15px;
-    border-radius: 0;
     font-size: 14px;
     padding: 5px 15px;
   }
   .user-details a h2 {
     font-size: 16px;
-    font-size: 600;
-    line-height: 18px;
-    letter-spacing: -0.3px;
-    font-family: "Poppins", sans-serif;
+    line-height: 22px;
     padding-top: 10px;
-    color: #fff;
   }
   .quote {
-    font-style: italic;
-    color: #ffff;
-    font-weight: 400;
     font-size: 12px;
     line-height: 24px;
   }
   .subscribe-text h3 {
     font-size: 22px;
     line-height: 30px;
-    color: #fff;
   }
   .subscribe-text p {
     font-size: 14px;
-    font-weight: 400;
     line-height: 21px;
     padding-top: 15px;
-    color: #fff;
   }
   .subscribe-form input {
     padding: 10px 10px;
-    border-radius: 0;
   }
   .subscribe-button {
     padding: 0px 5px;
   }
   .subscribe-button button {
-    color: #fff;
-    background-color: #000;
-    border: 2px solid #006610;
     padding: 10px;
     font-size: 14px;
   }
@@ -1217,10 +1039,126 @@ form .btn:hover {
   }
   .footer-end p {
     font-size: 12px;
-    font-weight: 400;
-    letter-spacing: -0.3;
     line-height: 22px;
-    text-align: center;
     padding: 15px 0;
+  }
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .section-heading a h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .section-heading p {
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  .top-header {
+    display: none;
+  }
+
+  .main-header .navbar-brand h2 {
+    font-size: 22px;
+    padding: 0px 5px;
+    margin-bottom: 0;
+  }
+  .main-header .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 5px 30px;
+  }
+  .main-header .navbar-expand-lg .navbar-nav .dropdown-menu a:hover {
+    font-size: 16px;
+    padding: 5px 30px;
+  }
+  .main-header.navbar-expand-lg .navbar-nav .dropdown-menu {
+    font-size: 16px;
+    padding: 5px 30px;
+  }
+  .logo i {
+    font-size: 20px;
+  }
+  .form-title h1 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 60px;
+  }
+  .login-btn button {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 20px;
+    padding: 10px 40px;
+  }
+  .offer-card-body h5 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .offer-card-body p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .offer-card-body span {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .discover-text h3 {
+    font-size: 20px;
+    margin: 15px;
+  }
+  .package-area .package-body h5 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .package-area .package-body p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .package-body .btn {
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+  .travel-img {
+    margin-bottom: 24px;
+  }
+  .offer-card-area {
+    margin-bottom: 24px;
+  }
+  .form-input input {
+    margin-bottom: 30px;
+    padding: 10px 18px;
+    font-size: 17px;
+  }
+  .gallery-image {
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+  .subscribe-text h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .subscribe-text p {
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 12px;
+  }
+  .subscribe-button {
+    padding: 0px 5px;
+  }
+  .subscribe-button button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .footer-end p {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 15px 0;
+  }
+  .footer-info {
+    padding: 20px 0;
   }
 }
